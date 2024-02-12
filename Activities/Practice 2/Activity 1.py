@@ -31,20 +31,14 @@ while True:
                         print("Correo incorrecto")
 
         address = input("Ingrese su domicilio: ")
+
+        directory = pd.DataFrame([[name, phone, email, address]],
+                                columns=["Nombre", "Telefono", "Correo", "Domicilio"])
         
         if os.path.exists(path):
-                existing_data = pd.read_csv(path)
-
-                new_data = pd.DataFrame([
-                        [name, phone, email, address]
-                        ],columns=["Nombre", "Telefono", "Correo", "Domicilio"])
-                        
-                update_data = pd.concat([existing_data, new_data], ignore_index=True)
+                existing_data = pd.read_csv(path)               
+                update_data = pd.concat([existing_data, directory], ignore_index=True)
                 update_data.to_csv(path, index=False)
-        else:
-                directory = pd.DataFrame([
-                        [name, phone, email, address]
-                        ],columns=["Nombre", "Telefono", "Correo", "Domicilio"])
-                                
+        else:                       
                 directory.to_csv(path, index=False)
         break
