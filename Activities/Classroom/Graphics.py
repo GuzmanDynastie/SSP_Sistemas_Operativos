@@ -15,7 +15,6 @@ plt.title('sine wave')
 plt.show() 
 
 
-'''
 # Dotted Graph
 x = linspace(-3, 3, 30)
 y = x**2
@@ -70,4 +69,3 @@ langs=['C', 'C++', 'Java', 'Python', 'PHP']
 students=[23,17,35,29,12]
 ax.pie(students, labels=langs,autopct='%1.2f%%')
 plt.show()
-'''
