@@ -19,8 +19,6 @@ title_featured_good = soup.find('div', id='main-tga').find('h2').get_text(strip=
 text_featured_good = soup.find('div', id='main-tga').find('p').get_text(strip=True, separator=' ')
 full_path_2 = os.path.join(path, title_featured_good + '.txt')
 
-
-# print(soup.prettify()) # Identa todas las etiquetas
 with open(full_path_1, 'w', encoding='utf-8') as file:
     file.write(text_featured_articled)
     
