@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 
-path = 'Activities/Classroom/webscraping'
-path_csv = 'Activities/Classroom/webscraping/pokemon'
+path = 'Activities/Practice 6'
+path_csv = 'Activities/Practice 6/pokemon'
 
 def create_pokemon():
 # USER AGENT PARA PROTEGERNOS DE BANEOS
