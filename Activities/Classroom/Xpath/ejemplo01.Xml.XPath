@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Order SYSTEM "order.dtd">
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<!--That is a comment!-->
+
+<order date="2019-02-01">
+    <address xmlns:shipping="http://localhost/XML/delivery" xmlns:billing="http://localhost/XML/billing">
+        <shipping:name>Ellen Adams</shipping:name>
+        <shipping:street>123 Maple Street</shipping:street>
+        <shipping:city>Mill Valley</shipping:city>
+        <shipping:state>CA</shipping:state>
+        <shipping:zip>10999</shipping:zip>
+        <shipping:country>USA</shipping:country>
+        <billing:name>Mary Adams</billing:name>
+        <billing:street>8 Oak Avenue</billing:street>
+        <billing:city>Old Town</billing:city>
+        <billing:state>PA</billing:state>
+        <billing:zip>95819</billing:zip>
+        <billing:country>USA</billing:country>
+    </address>
+    <comment>Please use gift wrapping!</comment>
+    <items>
+        <book isbn="9781408845660">
+            <title>Harry Potter and the Prisoner of Azkaban</title>
+            <quantity>1</quantity>
+            <priceus>22.94</priceus>
+            <comment>Please confirm delivery date until Christmas.</comment>
+        </book>
+        <book isbn="9780544003415">
+            <title>The Lord of the Rings</title>
+            <quantity>1</quantity>
+            <priceus>17.74</priceus>
+        </book>
+    </items>
+</order>
